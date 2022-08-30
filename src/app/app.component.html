@@ -1,0 +1,14 @@
+<div style="height: 100%;" fxLayout="column" fxLayoutGap="5px;">
+  <mat-toolbar class="mat-elevation-z3">
+      <img src="../../assets/logo.svg" routerLink="./">
+      <span fxFlex fxLayoutAlign="center">
+        <button mat-button routerLink="projects">Projects</button>
+        <button mat-button routerLink="gallery">Gallery</button>
+        <button mat-button routerLink="blog">Blog</button>
+      </span>
+      <button mat-button color="primary" (click)="openContactDialog()">
+        <mat-icon>contacts</mat-icon>Contact
+      </button>
+    </mat-toolbar>
+  <router-outlet></router-outlet>
+</div>

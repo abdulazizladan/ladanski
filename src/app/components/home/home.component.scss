@@ -1,0 +1,66 @@
+#main{
+  #mastHead{
+    background-image: url('../../../assets/svg.svg');
+    #leftPanel{
+      aspect-ratio: 1/1;
+      padding: 25px;
+      #text-box{
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 5px #666666;
+        border-left: 5px solid red;
+        border-top: 5px solid red;
+        border-bottom: 5px solid #232323;
+        border-right: 5px solid #232323;
+      }
+    }
+    #rightPanel{
+      aspect-ratio: 1/1;
+    }
+  }
+  #skills{
+    text-align: center;
+    .skill-tab{
+      aspect-ratio: 12/4;
+      background-color: white;
+      padding: 5px;
+      .iconTab{
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+  #software{
+    padding: 15px;
+    #caption{
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #cccccc;
+    }
+    .softwareCard{
+      aspect-ratio: 1/1;
+      cursor: pointer;
+      .softwareCaption {
+        padding: 5px;
+        background-color: #cccccc;
+        text-align: center;
+      }
+    }
+  }
+  #gallery{
+    padding: 15px;
+    #caption{
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #cccccc;
+    }
+    .imageCard{
+      aspect-ratio: 1/1;
+      cursor: pointer;
+      .imageCardCaption{
+        padding: 5px;
+        background-color: #cccccc;
+        text-align: center;
+      }
+    }
+  }
+}

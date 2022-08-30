@@ -1,0 +1,64 @@
+<div fxLayout.gt-xs="row">
+  <span fxFlex.gt-xs="100%"></span>
+  <div fxLayout="column" id="main" fxLayoutGap="25px" fxFlex.gt-xs="900px">
+    <div id="mastHead" fxLayout.xs="column" fxLayout.gt-xs="row">
+      <div fxFlex.xs="50%" fxFlex.gt-xs="50%" id="leftPanel" fxLayoutAlign="center center">
+        <div id="text-box" fxLayout="column">
+          <div class="mat-display-2" style="margin-bottom: 2px;">Hi! I am Abdulaziz.</div>
+          <div class="mat-display-1" style="color: rgb(255, 0, 0); margin-top: 2px; border-bottom: 1px solid grey">Web developer & Graphic Artist</div>
+          <div style="margin-top: 2px;">
+            I am a freelance software develpoer with proficiency in Angular and NestJS. I am also a graphic artist with proficiency in 2D illustrations and 3D modelling and motion graphiics.
+          </div>
+        </div>
+      </div>
+      <div fxFlex.xs="50%" fxFlex.gt-xs="50%" id="rightPanel" fxLayoutAlign="canter">
+        <img src="./assets/pic.png">
+      </div>
+    </div>
+
+    <div id="skills" fxLayoutGap.xs="10px" fxLayoutAlign.gt-xs="space-between center" fxLayout.xs="column" fxLayout.gt-xs="row" >
+      <div class="skill-tab mat-elevation-z2" fxLayout="row" fxFlex.gt-xs="20%" *ngFor="let skill of skills">
+        <div fxLayoutAlign="center center" class="iconTab">
+          <mat-icon color="accent">{{skill.icon}}</mat-icon>
+        </div>
+        <div class="mat-subtitle" fxLayout="column" fxLayoutAlign="center center">
+          {{skill.name}}
+        </div>
+      </div>
+    </div>
+
+    <div id="software" class="mat-elevation-z4" fxLayoutGap="20px" fxLayout="column">
+      <div id="caption" class="mat-headline">
+        Web projects
+      </div>
+      <div fxLayout.xs="column" fxLayoutGap.xs="20px" fxLayoutGap.gt-xs="20px" fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-around center">
+
+        <div class="softwareCard mat-elevation-z4" fxLayout="column" fxFlex.gt-xs="30%" *ngFor="let project of projects" (click)="openProjectSummaryDialog()">
+          <div fxFlex="1 1 auto"></div>
+          <div class="softwareCaption">{{project.name}}</div>
+        </div>
+
+      </div>
+      <div fxLayout="row" fxLayoutAlign="center">
+        <button mat-flat-button color="primary" routerLink="projects">Show all</button>
+      </div>
+    </div>
+
+    <div id="gallery" class="mat-elevation-z4" fxLayoutGap="20px" fxLayout="column">
+      <div id="caption" class="mat-headline">
+        Gallery
+      </div>
+      <div fxLayout.xs="column" fxLayoutGap.xs="20px" fxLayoutGap.gt-xs="20px" fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-around center">
+        <div class="imageCard mat-elevation-z4" fxFlex.gt-xs="30%" *ngFor="let image of images" fxLayout="column">
+          <div fxFlex="1 1 auto" style="background-image: url({{image.url}}); background-size: contain; background-position: center; background-repeat: no-repeat; cursor: pointer; background-color: #121212;">
+          </div>
+          <div class="mat-caption imageCardCaption">{{image.title | titlecase}}</div>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="center">
+        <button mat-flat-button color="primary" routerLink="gallery">Show all</button>
+      </div>
+    </div>
+  </div>
+  <span fxFlex.gt-xs="100%"></span>
+</div>
