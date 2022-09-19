@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -16,21 +17,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { HomeComponent } from './components/home/home.component';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectSummaryComponent } from './components/project-summary/project-summary.component';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
+import { ImageViewComponent } from './components/image-view/image-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ContactComponent,
-    ProjectSummaryComponent
+    ProjectSummaryComponent,
+    ImageViewComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule,
+    HttpClientModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatMenuModule,
@@ -42,13 +45,12 @@ import { ProjectSummaryComponent } from './components/project-summary/project-su
     AppRoutingModule,
     BrowserAnimationsModule,
     StoreModule.forRoot({}, {}),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([]),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(library: FaIconLibrary) {
-    library.addIconPacks(fas)
-  }
+
  }

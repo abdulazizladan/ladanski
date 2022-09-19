@@ -1,5 +1,7 @@
+import { DialogRef } from '@angular/cdk/dialog';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ImageViewComponent } from '../image-view/image-view.component';
 import { ProjectSummaryComponent } from '../project-summary/project-summary.component';
 
 @Component({
@@ -31,7 +33,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   projects = [
     {
       "name": "ProMon",
-      "description": "A simple project monitoring solution.",
+      "description": "A simple project monitoring solution. It allows administrators to record and keep track of their organizations present and past projects",
       "stack": [
         "Angular", "NestJS", "PostgreSQL"
       ]
@@ -40,15 +42,18 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   images = [
     {
+      "thumbnail": "./assets/thumbnails/Render_01.png",
+      "url": "./assets/images/Render_01.png",
+      "title": "Product render"
+    },
+    {
+      "thumbnail": "./assets/thumbnails/quirky_hat.png",
       "url": "./assets/images/Funny.png",
       "title": "quirky hat"
     },
     {
+      "thumbnail": "./assets/thumbnails/werewolf.png",
       "url": "./assets/images/Werewolf.png",
-      "title": "Werewolf"
-    },
-    {
-      "url": "./assets/images/Lapras.png",
       "title": "Lapras"
     }
   ]
@@ -57,6 +62,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   openProjectSummaryDialog() {
     this.dialog.open(ProjectSummaryComponent)
+  }
+
+  openImageView( image: string ): void {
+    const dialogRef = this.dialog.open(ImageViewComponent, {
+      data: image
+    });
+
+    dialogRef.afterClosed().subscribe()
   }
 
   ngOnInit(): void {

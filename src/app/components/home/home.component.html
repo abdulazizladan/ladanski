@@ -49,8 +49,8 @@
         Gallery
       </div>
       <div fxLayout.xs="column" fxLayoutGap.xs="20px" fxLayoutGap.gt-xs="20px" fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-around center">
-        <div class="imageCard mat-elevation-z4" fxFlex.gt-xs="30%" *ngFor="let image of images" fxLayout="column">
-          <div fxFlex="1 1 auto" style="background-image: url({{image.url}}); background-size: contain; background-position: center; background-repeat: no-repeat; cursor: pointer; background-color: #121212;">
+        <div class="imageCard mat-elevation-z4" fxFlex.gt-xs="30%" *ngFor="let image of images" fxLayout="column" (click)="openImageView(image.url)">
+          <div fxFlex="1 1 auto" style="background-image: url({{image.thumbnail}}); background-size: contain; background-position: center; background-repeat: no-repeat; cursor: pointer; background-color: #121212;">
           </div>
           <div class="mat-caption imageCardCaption">{{image.title | titlecase}}</div>
         </div>
