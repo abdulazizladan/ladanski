@@ -12,7 +12,7 @@
         {{ post.paragraphs[0].paragraph }}
       </mat-card-content>
       <mat-card-actions align="end">
-        <button mat-flat-button color="primary">Read</button>
+        <button mat-flat-button color="primary" routerLink="post/{{ post.id}}">Read</button>
       </mat-card-actions>
     </mat-card>
 

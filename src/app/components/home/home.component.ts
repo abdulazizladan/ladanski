@@ -33,7 +33,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
   projects = [
     {
       "name": "ProMon",
+      "thumbnail": "./assets/project_thumbnails/promon_thumbnail.svg",
       "description": "A simple project monitoring solution. It allows administrators to record and keep track of their organizations present and past projects",
+      "stack": [
+        "Angular", "NestJS", "PostgreSQL"
+      ]
+    },
+    {
+      "name": "ItSchool",
+      "thumbnail": "./assets/project_thumbnails/itschool_thumbnail.svg",
+      "description": "A simple school records management system that automates some school records processes.",
       "stack": [
         "Angular", "NestJS", "PostgreSQL"
       ]

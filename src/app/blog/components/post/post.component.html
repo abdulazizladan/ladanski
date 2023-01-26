@@ -1,1 +1,25 @@
-<p>post works!</p>
+<div fxLayout.gt-xs="row" fxLayoutAlign="center">
+  <span fxFlex.gt-xs="100%"></span>
+  <div fxLayout="column" id="main" fxLayoutGap="25px" fxFlex.lt-xs="100%" fxFlex.gt-xs="900px">
+
+    <div height="20"></div>
+    <mat-card class="mat-elevation-z4" *ngIf="post$ | async as posts">
+      <mat-card-header>
+        <mat-card-title>{{posts[id - 1].title}}</mat-card-title>
+        <mat-card-subtitle>
+          {{posts[id - 1].date_published | date}}
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content *ngFor="let paragraph of posts[id -1].paragraphs">
+        <div fxLayout.gt-xs="column" fxLayoutGap="20px">
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <img fxFlex.xs="100%" fxFlex.gt-xs="240px" *ngIf="paragraph.image" src="{{paragraph.image}}" alt="alt url">
+          </div>
+          <p>{{paragraph.paragraph}}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+  <span fxFlex.gt-xs="100%"></span>
+</div>
