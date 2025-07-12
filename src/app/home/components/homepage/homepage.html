@@ -1,0 +1,96 @@
+<div class="bg-white text-black font-sans">
+
+    <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-red-600 to-red-800 opacity-90"></div>
+      <div class="relative z-10 p-8 max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4 animate-fade-in-down">
+          Ladanski Solutions
+        </h1>
+        <p class="text-xl md:text-2xl text-white mb-8 animate-fade-in-up">
+          Your Partner in Innovation and Digital Growth
+        </p>
+        <button class="bg-white text-red-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 animate-zoom-in">
+          Get Started Today!
+        </button>
+      </div>
+    </section>
+  
+  
+    <section id="about" class="py-16 px-4 md:px-8 lg:px-16">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-red-700 animate-slide-in-right">About Ladanski Solutions</h2>
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2 animate-fade-in-left">
+            <img src="https://via.placeholder.com/600x400/FF0000/FFFFFF?text=Our+Team" alt="Ladanski Solutions Team" class="rounded-lg shadow-xl object-cover w-full h-auto">
+          </div>
+          <div class="md:w-1/2 animate-fade-in-right">
+            <p class="text-lg leading-relaxed mb-4">
+              At Ladanski Solutions, we are a passionate team dedicated to helping small businesses thrive in the digital landscape. We believe that high-quality digital services shouldn't break the bank, which is why we offer **affordable rates** without compromising on excellence.
+            </p>
+            <p class="text-lg leading-relaxed">
+              From crafting stunning websites and robust software to building impactful brands and driving digital marketing success, our goal is to empower your business with innovative solutions that deliver tangible results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <section id="services" class="bg-gray-50 py-16 px-4 md:px-8 lg:px-16">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-red-700 animate-slide-in-left">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div *ngFor="let service of services" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 animate-fade-in-up">
+            <div class="text-5xl mb-4 text-center text-red-600">{{ service.icon }}</div>
+            <h3 class="text-2xl font-semibold text-center mb-3">{{ service.name }}</h3>
+            <p class="text-gray-700 text-center">{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <section id="products" class="py-16 px-4 md:px-8 lg:px-16">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-red-700 animate-slide-in-right">Our Work & Solutions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-left">
+            <img src="https://via.placeholder.com/500x300/FF0000/FFFFFF?text=Website+Showcase" alt="Product 1" class="rounded-md mb-4 w-full h-48 object-cover">
+            <h3 class="text-2xl font-semibold mb-2">Dynamic E-commerce Platform</h3>
+            <p class="text-gray-700 mb-4">A custom-built e-commerce solution designed for scalability and user experience, featuring secure payments and intuitive inventory management.</p>
+            <a href="#" class="text-red-700 hover:underline font-semibold">View Case Study &rarr;</a>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg animate-fade-in-right">
+            <img src="https://via.placeholder.com/500x300/FF0000/FFFFFF?text=App+Design" alt="Product 2" class="rounded-md mb-4 w-full h-48 object-cover">
+            <h3 class="text-2xl font-semibold mb-2">Mobile App for Service Bookings</h3>
+            <p class="text-gray-700 mb-4">An elegant and efficient mobile application simplifying service bookings and client management for a local business.</p>
+            <a href="#" class="text-red-700 hover:underline font-semibold">Explore App &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="testimonials" class="bg-red-700 text-white py-16 px-4 md:px-8 lg:px-16">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 animate-slide-in-down">What Our Clients Say</h2>
+        <div class="relative">
+          <div class="overflow-hidden">
+            <!--<div class="flex transition-transform duration-500 ease-in-out"
+                 [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+              <div *ngFor="let testimonial of testimonials; let i = index" class="w-full flex-shrink-0">
+                <p class="text-2xl italic mb-6 leading-relaxed">"{{ testimonial.quote }}"</p>
+                <p class="text-lg font-semibold">- {{ testimonial.author }}</p>
+              </div>
+            </div>-->
+          </div>
+          <div class="flex justify-center mt-8 space-x-2">
+            <!--<button *ngFor="let testimonial of testimonials; let i = index"
+                    (click)="currentIndex = i"
+                    class="w-3 h-3 rounded-full transition-colors duration-300"
+                    [ngClass]="{'bg-white': currentIndex === i, 'bg-gray-400': currentIndex !== i}"></button>-->
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </div>

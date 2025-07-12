@@ -1,0 +1,39 @@
+<mat-toolbar class="bg-white shadow-sm border-b border-gray-200">
+  <mat-toolbar-row class="px-4">
+    <!-- Logo -->
+      <img src="/logo.png" alt="Ladanski Solutions Logo" id="logo"/>
+    
+    <span fxFlex="1 1 auto"></span>
+    
+    <!-- Navigation Buttons -->
+    <div class="flex items-center space-x-1" fxHide.lt-md>
+      <button routerLink="../" mat-button class="text-black hover:text-red-600 transition-colors duration-200">
+        Home
+      </button>
+      <button routerLink="services" mat-button class="text-black hover:text-red-600 transition-colors duration-200">
+        Services
+      </button>
+      <button routerLink="products" mat-button class="text-black hover:text-red-600 transition-colors duration-200">
+        Products
+      </button>
+      <button routerLink="blog" mat-button class="text-black hover:text-red-600 transition-colors duration-200">
+        Blog
+      </button>
+      <button routerLink="contact" mat-button class="text-black hover:text-red-600 transition-colors duration-200">
+        Contact
+      </button>
+    </div>
+    
+    <!--Mobile Menu Button -->
+    <button [matMenuTriggerFor]="menu" mat-icon-button class="ml-4 text-black hover:text-red-600 transition-colors duration-200" fxHide.gt-md>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Home</button>
+      <button mat-menu-item>Services</button>
+      <button mat-menu-item>Products</button>
+      <button mat-menu-item>Blog</button>
+      <button mat-menu-item>Contact</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
