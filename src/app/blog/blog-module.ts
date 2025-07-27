@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { BlogRoutingModule } from './blog-routing-module';
@@ -15,8 +17,9 @@ import { Post } from './components/post/post';
   ],
   imports: [
     CommonModule,
-    BlogRoutingModule,
+    HttpClientModule,
     FormsModule,
+    BlogRoutingModule,
     FlexLayoutModule
   ]
 })

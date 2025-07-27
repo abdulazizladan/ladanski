@@ -17,7 +17,7 @@ export class ProductsList {
         'Multi-user access with role-based permissions',
         'Easy integration with accounting systems'
       ],
-      link: '#pigeon-details'
+      link: '../product/1'
     },
     {
       name: 'Owl School Records Management App',
@@ -28,7 +28,7 @@ export class ProductsList {
         'Parent and teacher communication portal',
         'Customizable reporting tools'
       ],
-      link: '#owl-details'
+      link: '../product/2'
     }
   ];
 }

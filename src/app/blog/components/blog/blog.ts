@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BlogStore } from '../../store/blog.store';
+import { Post } from '../../models/post.model';
 
 @Component({
   selector: 'app-blog',
@@ -7,38 +9,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './blog.html',
   styleUrl: './blog.scss',
 })
-export class Blog {
-  blogs = [
-    {
-      title: 'How Digital Solutions Transform Small Businesses',
-      excerpt: 'Discover how digital tools and strategies can help small businesses grow and compete in today\'s market.',
-      category: 'Business',
-      date: new Date(2024, 5, 10),
-      image: 'https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Digital+Transformation'
-    },
-    {
-      title: 'Top 5 Features Every School Management App Needs',
-      excerpt: 'A breakdown of essential features for modern school management platforms to streamline operations.',
-      category: 'Education',
-      date: new Date(2024, 4, 22),
-      image: 'https://via.placeholder.com/400x200/FF0000/FFFFFF?text=School+App'
-    },
-    {
-      title: 'Branding Tips for Startups in 2024',
-      excerpt: 'Learn the latest branding strategies to help your startup stand out and attract loyal customers.',
-      category: 'Branding',
-      date: new Date(2024, 3, 15),
-      image: 'https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Branding+2024'
-    },
-    {
-      title: 'Why Fuel Stations Need Digital Records',
-      excerpt: 'Explore the benefits of digital record management for fuel stations and how it improves efficiency.',
-      category: 'Business',
-      date: new Date(2024, 2, 5),
-      image: 'https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Fuel+Station'
-    }
-  ];
-
+export class Blog implements OnInit {
   categories = ['All', 'Business', 'Education', 'Branding'];
   months = [
     { value: 0, label: 'All' },
@@ -62,12 +33,20 @@ export class Blog {
   selectedMonth = 0;
   selectedYear = 0;
 
+  constructor(public blogStore: BlogStore) {}
+
+  ngOnInit() {
+    this.blogStore.loadAll();
+  }
+
   get filteredBlogs() {
-    return this.blogs.filter(blog => {
-      const matchesSearch = this.search === '' || blog.title.toLowerCase().includes(this.search.toLowerCase()) || blog.excerpt.toLowerCase().includes(this.search.toLowerCase());
-      const matchesCategory = this.selectedCategory === 'All' || blog.category === this.selectedCategory;
-      const matchesMonth = this.selectedMonth === 0 || (blog.date.getMonth() + 1) === this.selectedMonth;
-      const matchesYear = this.selectedYear === 0 || blog.date.getFullYear() === this.selectedYear;
+    const blogs = this.blogStore.state().posts;
+    return blogs.filter(blog => {
+      const matchesSearch = this.search === '' || blog.title.toLowerCase().includes(this.search.toLowerCase()) || blog.summary.toLowerCase().includes(this.search.toLowerCase());
+      const matchesCategory = this.selectedCategory === 'All' || (blog as any).category === this.selectedCategory;
+      const date = new Date(blog.datePublished);
+      const matchesMonth = this.selectedMonth === 0 || (date.getMonth() + 1) === this.selectedMonth;
+      const matchesYear = this.selectedYear === 0 || date.getFullYear() === this.selectedYear;
       return matchesSearch && matchesCategory && matchesMonth && matchesYear;
     });
   }

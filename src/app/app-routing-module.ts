@@ -23,12 +23,10 @@ const routes: Routes = [
   {
     path: 'products',
     loadChildren: () => import('./products/products-module').then(module => module.ProductsModule),
-    pathMatch: 'full'
   },
   {
     path: 'blog',
     loadChildren: () => import('./blog/blog-module').then(module => module.BlogModule),
-    pathMatch: 'full'
   },
   {
     path: 'contact',

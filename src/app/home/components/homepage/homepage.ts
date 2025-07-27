@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './homepage.scss'
 })
 export class Homepage {
+
+  currentIndex: number = 0;
+  
   services = [
     {
       name: 'Software Development',
@@ -39,19 +42,25 @@ export class Homepage {
       icon: '📱'
     },
   ];
-
+  
   testimonials = [
     {
-      quote: "Ladanski Solutions transformed our online presence! Their website design was phenomenal and delivered on time.",
-      author: "Jane Doe, CEO of Stellar Innovations"
+      quote: "Ladanski Solutions transformed our online presence completely. Their web development team delivered beyond our expectations with a site that's not only beautiful but also drives conversions.",
+      author: "Alhaji Lawal Aliyu",
+      position: "CEO, Zazzau Industrial Park"
     },
     {
-      quote: "The team at Ladanski helped us refine our product idea into a market-ready solution. Their consultancy was invaluable.",
-      author: "John Smith, Founder of TechStart"
-    },
-    {
-      quote: "Our brand identity has never been stronger. Ladanski Solutions truly understands how to make a business stand out.",
-      author: "Emily White, Marketing Director at Global Corp"
+      quote: "Working with Ladanski was a game-changer for our business. Their digital marketing strategy increased our leads by 150% in just three months. Highly recommend their services!",
+      author: "Baba Bukar Isa",
+      position: "Founder, Mai-Bor Engineering"
     }
   ];
+
+  nextTestimonial() {
+    this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
+  }
+
+  prevTestimonial() {
+    this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
+  }
 }
