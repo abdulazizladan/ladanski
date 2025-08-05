@@ -2,7 +2,7 @@ import { Post } from "../models/post.model";
 import { Injectable, signal } from '@angular/core';
 import { BlogService } from '../services/blog';
 
-export interface blogState {
+export interface BlogState {
     posts: Post[];
     selectedPost: Post | null;
     loading: boolean;
@@ -13,7 +13,7 @@ export interface blogState {
 export class BlogStore {
   private readonly blogService = new BlogService();
 
-  state = signal<blogState>({
+  state = signal<BlogState>({
     posts: [],
     selectedPost: null,
     loading: false,

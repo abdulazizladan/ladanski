@@ -4,7 +4,10 @@ export interface Post {
     link: string;
     author: string;
     datePublished: Date;
-    paragraphs: string[];
+    paragraphs: {
+        type: string;
+        content: string;
+    }[];
     summary: string;
     image: string;
     body: string[];

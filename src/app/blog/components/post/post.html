@@ -12,7 +12,19 @@
       <img *ngIf="post.image" [src]="post.image" [alt]="post.title" class="rounded-lg shadow mb-8 w-full h-64 object-cover">
       <!--<p class="text-lg text-gray-700 mb-6 text-center">{{ post.summary }}</p>
       <div class="prose prose-lg max-w-none text-gray-900" [innerHTML]=post.summary></div>-->
-      <p *ngFor="let body of blogStore.state().selectedPost?.body" class="text-lg text-gray-700 mb-6">{{ body }}</p>
+      <!--<p *ngFor="let body of blogStore.state().selectedPost" class="text-lg text-gray-700 mb-6">{{ body }}</p>-->
+      @if(blogStore.state().selectedPost?.paragraphs) {
+        @for(p of blogStore.state().selectedPost?.paragraphs; track p) {
+          @if(p.type === 'text') {
+            <p class="text-lg text-gray-700 mb-6">{{ p.content }}</p>
+          } @else if(p.type === 'image') {
+            <img [src]="p.content" [alt]="blogStore.state().selectedPost?.title" class="rounded-lg shadow mb-8 w-full h-64 object-cover">
+          }
+          @else if(p.type === 'heading') {
+            <h2 class="text-2xl font-bold text-gray-700 mb-6">{{ p.content }}</h2>
+          }
+        }
+      }
     </ng-container>
     <ng-template #loadingOrError>
       <div *ngIf="blogStore.state().loading" class="text-center text-gray-500">Loading post...</div>

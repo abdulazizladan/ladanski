@@ -16,7 +16,7 @@ export class Post implements OnInit {
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       this.id = params.get('id');
-      if (this.id) {
+      if(this.id) {
         this.blogStore.loadById(this.id);
       }
     });

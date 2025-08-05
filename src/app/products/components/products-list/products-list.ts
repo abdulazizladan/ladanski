@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { ProductsStore } from '../../store/products.store';
 
 @Component({
   selector: 'app-products-list',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './products-list.html',
   styleUrl: './products-list.scss'
 })
-export class ProductsList {
-  products = [
+export class ProductsList implements OnInit {
+  /**products = [
     {
       name: 'Pigeon Fuel Station Records Management App',
       about: 'A comprehensive solution for managing fuel station operations, including sales, inventory, and reporting.',
@@ -30,5 +31,10 @@ export class ProductsList {
       ],
       link: '../product/2'
     }
-  ];
+  ];**/
+
+  public productsStore = inject(ProductsStore)
+  ngOnInit() {
+    this.productsStore.loadAll();
+  }
 }

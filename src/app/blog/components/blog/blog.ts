@@ -26,7 +26,7 @@ export class Blog implements OnInit {
     { value: 11, label: 'November' },
     { value: 12, label: 'December' }
   ];
-  years = [0, 2024, 2023, 2022];
+  years = [0, 2025, 2024, 2023, 2022];
 
   search = '';
   selectedCategory = 'All';

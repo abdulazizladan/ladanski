@@ -18,7 +18,6 @@ export class BlogService {
 
   async getByID(id: string): Promise<Post | undefined> {
     const posts = await this.getAll();
-    // For now, use title as id. In production, use a real id property.
     return posts.find(post => post.title.replace(/\s+/g, '-').toLowerCase() === id.toLowerCase());
   }
 }

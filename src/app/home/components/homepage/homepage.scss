@@ -56,3 +56,22 @@
   .animate-slide-in-down {
     animation: slide-in-down 0.8s ease-out forwards;
   }
+
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animate-gradient-flow {
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+      135deg,
+      #000000 0%,
+      #7f1d1d 25%,
+      #b91c1c 50%,
+      #7f1d1d 75%,
+      #000000 100%
+    );
+    animation: gradientFlow 8s ease infinite;
+  }
