@@ -1,6 +1,7 @@
 export class Product{
     "id": string;
     "name": string;
+    "description": string;
     "preview": string;
     "summary": string;
     "link": string;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ladanski.com.ng/</loc>
+  </url>
+  <url>
+    <loc>https://ladanski.com.ng/home</loc>
+  </url>
+  <url>
+    <loc>https://ladanski.com.ng/services</loc>
+  </url>
+  <url>
+    <loc>https://ladanski.com.ng/products/list</loc>
+  </url>
+  <url>
+    <loc>https://ladanski.com.ng/products/product/PRODUCT_ID</loc>
+  </url>
+  <url>
+    <loc>https://ladanski.com.ng/blog/posts</loc>
+  </url>
+  <url>
+    <loc>https://ladanski.com.ng/blog/post/POST_ID</loc>
+  </url>
+  <url>
+    <loc>https://ladanski.com.ng/contact</loc>
+  </url>
+</urlset>

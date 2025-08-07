@@ -28,12 +28,13 @@
     <button [matMenuTriggerFor]="menu" mat-icon-button class="ml-4 text-black hover:text-red-600 transition-colors duration-200" fxHide.gt-md>
       <mat-icon>more_vert</mat-icon>
     </button>
+    
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>Home</button>
-      <button mat-menu-item>Services</button>
-      <button mat-menu-item>Products</button>
-      <button mat-menu-item>Blog</button>
-      <button mat-menu-item>Contact</button>
+      <button mat-menu-item routerLink="../">Home</button>
+      <button mat-menu-item routerLink="services">Services</button>
+      <button mat-menu-item routerLink="products">Products</button>
+      <button mat-menu-item routerLink="blog">Blog</button>
+      <button mat-menu-item routerLink="contact">Contact</button>
     </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>

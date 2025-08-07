@@ -1,9 +1,10 @@
 [
     {
         "id": "pigeon-fuel-station-manager",
-        "name": "Pigeon Fuel Station Manager",
+        "name": "Pigeon",
+        "description": "Web-based fuel station management system",
         "preview": "https://www.octane-systems.com/edit/cache/images/cropped_1200x761c0pcenter.jpg",
-        "summary": "Pegeon is a comprehensive web-based fuel station management system designed to streamline and automate daily operations. It offers a centralized platform for administrators, directors, and managers to efficiently oversee all aspects of their fuel stations.",
+        "summary": "Pigeon is a comprehensive web-based fuel station management system designed to streamline and automate daily operations. It offers a centralized platform for administrators, directors, and managers to efficiently oversee all aspects of their fuel stations.",
         "link": "pigeon-fuel-station-manager",
         "demo_link": "https://pigeon-218.web.app",
         "sections": [
@@ -77,7 +78,8 @@
     },
     {
         "id": "owl-school-management-information-system",
-        "name": "Owl School Management Information System",
+        "name": "Owl",
+        "description": "Cross-platform school management system",
         "preview": "https://blog.excelmind.org/wp-content/uploads/2025/05/The-Best-School-Management-Software-in-Nigeria-1.png",
         "summary": "Owl is a comprehensive web-based school management information system designed to streamline the administration and communication for secondary schools. It provides a centralized platform for administrators, staff, students, and guardians to manage and access critical school information.",
         "link": "owl-school-management-information-system",

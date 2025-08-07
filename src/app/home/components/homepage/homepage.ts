@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-homepage',
@@ -55,6 +56,22 @@ export class Homepage {
       position: "Founder, Mai-Bor Engineering"
     }
   ];
+
+  constructor(private meta: Meta, private title: Title) {
+    this.title.setTitle('Ladanski Solutions | Software, Web, Branding, Digital Marketing');
+    this.meta.addTags([
+      { name: 'description', content: 'Ladanski Solutions offers bespoke software development, web design, branding, digital marketing, and consultancy to help your business thrive.' },
+      { property: 'og:title', content: 'Ladanski Solutions | Software, Web, Branding, Digital Marketing' },
+      { property: 'og:description', content: 'Ladanski Solutions offers bespoke software development, web design, branding, digital marketing, and consultancy to help your business thrive.' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://ladanski.com/' },
+      { property: 'og:image', content: 'https://ladanski.com/logo.png' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Ladanski Solutions | Software, Web, Branding, Digital Marketing' },
+      { name: 'twitter:description', content: 'Ladanski Solutions offers bespoke software development, web design, branding, digital marketing, and consultancy to help your business thrive.' },
+      { name: 'twitter:image', content: 'https://ladanski.com/logo.png' }
+    ]);
+  }
 
   nextTestimonial() {
     this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
