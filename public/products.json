@@ -134,6 +134,10 @@
                         "content": "Automate routine tasks such as enrollment and reporting, freeing up administrative staff to focus on more critical activities."
                     },
                     {
+                        "subheading": "Improved Administrative Efficiency",
+                        "content": "Automate routine tasks such as enrollment and reporting, freeing up administrative staff to focus on more critical activities."
+                    },
+                    {
                         "subheading": "Increased Transparency",
                         "content": "Provide students and guardians with real-time access to grades, attendance records, and school updates, fostering trust and engagement."
                     },
@@ -154,6 +158,83 @@
             {
                 "type": "image",
                 "content": "https://i.ibb.co/hV6v4D5/owl-dashboard.png"
+            }
+        ]
+    },
+    {
+        "id": "kd-markets-management-system",
+        "name": "KD-Markets",
+        "description": "Comprehensive markets management system for State-level administration",
+        "preview": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "summary": "KD-Markets is a powerful web-based markets management system designed to enable State-level market administrators to efficiently oversee all aspects of their markets. It provides comprehensive tools for revenue generation, facilities management, building and stall occupancy tracking, and user management.",
+        "link": "kd-markets-management-system",
+        "demo_link": "https://kd-markets.web.app",
+        "sections": [
+            {
+                "type": "heading",
+                "content": "Key Features"
+            },
+            {
+                "type": "features-list",
+                "content": [
+                    {
+                        "subheading": "Revenue Generation Management",
+                        "content": "Track and manage all revenue streams including stall rentals, shop fees, market taxes, and other income sources. Generate comprehensive financial reports and monitor revenue trends across different market locations."
+                    },
+                    {
+                        "subheading": "Facilities Management",
+                        "content": "Efficiently manage market infrastructure including buildings, stalls, shops, parking areas, and utilities. Track maintenance schedules, repairs, and facility upgrades to ensure optimal market conditions."
+                    },
+                    {
+                        "subheading": "Building and Stall Occupancy",
+                        "content": "Monitor real-time occupancy status of all market facilities. Track lease agreements, rental periods, and occupancy rates to maximize space utilization and revenue generation."
+                    },
+                    {
+                        "subheading": "User Management System",
+                        "content": "Comprehensive user management for market administrators, staff, vendors, and tenants. Role-based access control ensures secure and appropriate access to different system features."
+                    },
+                    {
+                        "subheading": "Market Analytics and Reporting",
+                        "content": "Advanced analytics and reporting tools to track market performance, occupancy rates, revenue trends, and operational efficiency. Make data-driven decisions to optimize market operations."
+                    }
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Benefits of Using KD-Markets"
+            },
+            {
+                "type": "features-list",
+                "content": [
+                    {
+                        "subheading": "Centralized Market Control",
+                        "content": "Manage multiple markets from a single platform with real-time visibility into operations, occupancy, and revenue across all locations."
+                    },
+                    {
+                        "subheading": "Increased Revenue Optimization",
+                        "content": "Identify underutilized spaces, optimize rental rates, and implement strategic pricing to maximize market revenue and profitability."
+                    },
+                    {
+                        "subheading": "Improved Operational Efficiency",
+                        "content": "Automate routine administrative tasks, streamline facility management processes, and reduce manual workload for market administrators."
+                    },
+                    {
+                        "subheading": "Enhanced Market Planning",
+                        "content": "Use comprehensive data and analytics to plan market expansions, renovations, and strategic improvements based on actual usage patterns and revenue data."
+                    }
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "How KD-Markets Works"
+            },
+            {
+                "type": "text",
+                "content": "KD-Markets provides State-level administrators with a comprehensive dashboard to oversee all market operations. The system centralizes facility management, tracks occupancy and revenue in real-time, and provides detailed analytics for strategic decision-making. Administrators can monitor multiple markets simultaneously, manage user access, track facility maintenance, and generate comprehensive reports on market performance and revenue generation."
+            },
+            {
+                "type": "image",
+                "content": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
             }
         ]
     }
