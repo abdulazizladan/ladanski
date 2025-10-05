@@ -1,0 +1,40 @@
+<svg width="320" height="180" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="320" height="180" fill="url(#bgGradient5)" rx="8"/>
+  
+  <!-- Compass center -->
+  <circle cx="160" cy="90" r="40" fill="none" stroke="url(#iconGradient5)" stroke-width="3"/>
+  <circle cx="160" cy="90" r="25" fill="url(#iconGradient5)" opacity="0.2"/>
+  
+  <!-- Compass needle -->
+  <line x1="160" y1="90" x2="160" y2="50" stroke="url(#iconGradient5)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="160" y1="90" x2="160" y2="130" stroke="url(#iconGradient5)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <line x1="160" y1="90" x2="120" y2="90" stroke="url(#iconGradient5)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="160" y1="90" x2="200" y2="90" stroke="url(#iconGradient5)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Center dot -->
+  <circle cx="160" cy="90" r="4" fill="url(#iconGradient5)"/>
+  
+  <!-- Direction labels -->
+  <text x="160" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="url(#iconGradient5)">N</text>
+  <text x="160" y="145" text-anchor="middle" font-family="Arial" font-size="12" fill="url(#iconGradient5)">S</text>
+  <text x="115" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="url(#iconGradient5)">W</text>
+  <text x="205" y="95" text-anchor="middle" font-family="Arial" font-size="12" fill="url(#iconGradient5)">E</text>
+  
+  <!-- Strategy elements -->
+  <circle cx="80" cy="60" r="8" fill="url(#iconGradient5)" opacity="0.6"/>
+  <circle cx="240" cy="60" r="8" fill="url(#iconGradient5)" opacity="0.6"/>
+  <circle cx="80" cy="120" r="8" fill="url(#iconGradient5)" opacity="0.6"/>
+  <circle cx="240" cy="120" r="8" fill="url(#iconGradient5)" opacity="0.6"/>
+</svg>

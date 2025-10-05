@@ -1,0 +1,45 @@
+<div class="bg-gray-50 py-16 px-4 md:px-8 lg:px-16 min-h-screen">
+    <div class="max-w-6xl mx-auto">
+      <!--<h2 class="text-4xl font-bold text-center mb-12 text-red-700 animate-slide-in-left">Product</h2>-->
+    </div>
+    <div class="max-w-3xl mx-auto">
+      <ng-container *ngIf="productsStore.state().selectedProduct as product;">
+        <h1 class="text-4xl font-bold text-center mb-4 text-red-700 animate-slide-in-left">{{ product.name }}</h1>
+        @if(product.preview) {
+          <img [src]="product.preview" [alt]="product.name" class="rounded-lg shadow mb-8 w-full h-64 object-cover">
+          <ul class="mb-6 list-disc list-inside text-gray-800">
+            {{product.summary}}
+          </ul>
+          
+          @for(section of product.sections; track section) {
+            @if(section.type === 'heading') {
+              <h2 class="text-2xl font-bold text-center mb-4 text-red-700 animate-slide-in-left">{{ section.content }}</h2>
+            } @else if(section.type === 'text') {
+              <p class="text-gray-700 text-center mb-4">{{ section.content }}</p>
+            } @else if(section.type === 'features-list') {
+              @if(Array.isArray(section.content)) {
+                <ul class="list-inside text-gray-700 mb-4">
+                  @for(content of section.content; track content) {
+                    @if(isString(content)) {
+                      <li class="mb-2 text-red-600">{{ content }}</li>
+                    } @else {
+                      <li class="mb-2">
+                        <strong>{{ getSubheading(content) }}</strong>
+                        <p class="mt-1">{{ getContent(content) }}</p>
+                      </li>
+                    }
+                  }
+                </ul>
+              }
+            }
+          }
+          <!--@if(product.sections.length === 0) {
+            <p class="text-gray-700 text-center mb-4">No sections found</p>
+          }-->
+          <div class="mt-auto text-center my-10">
+            <a [href]="product.demo_link" target="_blank" class="inline-block bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-red-800 transition-colors duration-200">View Demo</a>
+          </div>
+        }
+      </ng-container>
+    </div>
+</div>

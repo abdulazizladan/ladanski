@@ -1,0 +1,93 @@
+[
+    {
+      "id": "bespoke-software-development",
+      "name": "Custom Software Engineering & Digital Transformation",
+      "shortDescription": "Future-proof, scalable, and custom applications that deliver a decisive competitive advantage.",
+      "description": "Stop trying to fit your unique business into off-the-shelf software. We engineer robust, scalable, and secure custom applications that are perfectly aligned with your processes, streamlining operations and delivering a decisive competitive edge. We manage the entire lifecycle, ensuring the final product is built for performance and growth.",
+      "icon": "custom-software-development.svg",
+      "highlights": [
+        "Impact-Driven Discovery: Define technical scope, strategic roadmap, and architectural blueprint to ensure maximum ROI.",
+        "Full-Stack & Cross-Platform Development: Reliable, high-performance applications for Web, Mobile (iOS/Android), and Enterprise systems.",
+        "Quality Assurance & Testing: Rigorous unit, integration, and end-to-end testing protocols to guarantee stability and bug-free performance.",
+        "DevOps & Modernization: Automated CI/CD pipelines, enhanced observability, and guaranteed long-term stability and maintenance."
+      ]
+    },
+    {
+      "id": "high-impact-website-and-ux",
+      "name": "High-Converting Websites & E-Commerce Platforms",
+      "shortDescription": "Stunning, lightning-fast, and search-optimized websites built to convert visitors into customers.",
+      "description": "Your website is your best salesperson. We design and build stunning, high-performance, and mobile-responsive digital storefronts** engineered specifically for lead generation and e-commerce conversions. Our focus on intuitive User Experience (UX) ensures visitors stay engaged and take action.",
+      "icon": "website-ux.svg",
+      "highlights": [
+        "Conversion-Focused UX: Deep user research, strategic wireframing, and clear calls-to-action designed for lead capture.",
+        "Superior Page Speed Optimization: Best-in-class performance metrics for better SEO rankings and significantly lower bounce rates.",
+        "SEO-Ready Architecture: Core technical SEO implementation (schema, sitemaps, semantic markup) built into the code base.",
+        "Data-Backed Optimization: Integration of advanced analytics, A/B testing frameworks, and heat mapping to continuously improve your sales funnel."
+      ]
+    },
+    {
+      "id": "strategic-brand-identity",
+      "name": "Distinctive Brand Strategy & Identity Design",
+      "shortDescription": "A complete, cohesive brand identity that commands premium pricing and instant market recognition.",
+      "description": "A logo is not a brand. We craft a complete, strategic brand identity encompassing voice, visual systems, and core values—that builds instant trust and positions you as an authoritative leader in your market. We turn your company into a memorable, recognizable asset.",
+      "icon": "brand-identity.svg",
+      "highlights": [
+        "Positioning & Messaging: Define your unique value proposition, tone of voice, competitive landscape analysis, and core narrative.",
+        "Cohesive Visual System: Professional logo, color palettes, typography, iconography, and comprehensive brand usage guidelines.",
+        "Audience Persona Development: Detailed profiling of your ideal customer to ensure messaging resonates deeply.",
+        "Market Rollout Support: Design collateral templates (presentations, stationery) and a strategy for launching your new identity."
+      ]
+    },
+    {
+      "id": "data-driven-digital-marketing",
+      "name": "Performance-Driven Digital Marketing & Growth Hacking",
+      "shortDescription": "Tailored, multi-channel campaigns (SEO, PPC, Social) focused obsessively on measurable ROI and pipeline growth.",
+      "description": "We don't do 'busywork' marketing. We drive qualified traffic, leads, and demonstrable growth through data-driven, multi-channel campaigns (SEO, PPC, Social). Our entire focus is on measurable results, transparent reporting, and maximizing your Return on Investment (ROI).",
+      "icon": "digital-marketing.svg",
+      "highlights": [
+        "Dominant SEO Strategy: Technical SEO audits, high-impact content strategy, and link-building to capture organic market share.",
+        "Optimized Paid Media: Hyper-targeted PPC (Google Ads) and Social Media (Meta/LinkedIn) campaigns with rigorous budget management and bid optimization.",
+        "Marketing Automation & Nurturing: Setup and management of email marketing, lead scoring, and automated customer journeys.",
+        "Full-Funnel Attribution: Advanced reporting and analytics to connect every dollar spent directly to a new customer or revenue gain."
+      ]
+    },
+    {
+      "id": "fractional-cto-consultancy",
+      "name": "Fractional CTO & Strategic Technology Leadership",
+      "shortDescription": "Executive-level technical strategy, guidance, and risk management without the commitment of a full-time hire.",
+      "description": "Get the wisdom and services of a seasoned CTO without the monumental salary. We provide expert, executive-level technical leadership and strategy to guide your critical technology decisions, maximize your team's efficiency, and minimize expensive technical debt and risk. This is strategic oversight designed for growth.",
+      "icon": "fractional-cto.svg",
+      "highlights": [
+        "Technical Vision & Roadmapping: Develop a clear, three-year technology roadmap aligned perfectly with business goals and market trends.",
+        "Team & Process Enablement: Implement best-practice Agile/Scrum methodologies and mentor engineering leadership for higher throughput and morale.",
+        "Risk Mitigation & Security Posture: Comprehensive technical debt analysis, compliance assessment, and disaster recovery planning.",
+        "Critical Decision Support: Expert guidance on 'build vs. buy' decisions, platform selection, vendor negotiation, and capital expenditure planning."
+      ]
+    },
+    {
+      "id": "engaging-product-design-ui-ux",
+      "name": "Strategic Product Design (UI/UX) & Experience Mapping",
+      "shortDescription": "Intuitive, delightful, and accessible interfaces that maximize user adoption and retention.",
+      "description": "Great products are felt, not just seen. We design intuitive and delightful User Interfaces (UI) and experiences (UX) for software products, ensuring they are not just beautiful, but solve real-world user problems. Our process centers on **maximizing user adoption and driving product stickiness.**",
+      "icon": "product-design.svg",
+      "highlights": [
+        "User-Centric Prototyping: Detailed user flows, interactive high-fidelity prototypes, and comprehensive experience mapping.",
+        "Scalable Design Systems: Creation of cohesive, reusable component libraries (e.g., in Figma) that ensure brand consistency and speed up developer handoff.",
+        "Accessibility & Compliance: Rigorous WCAG compliance audits and design adjustments to ensure your product is usable by everyone.",
+        "Continuous Improvement: Setting up iterative usability testing, feedback loops, and design sprints to refine the user experience post-launch."
+      ]
+    },
+    {
+      "id": "cloud-and-infrastructure",
+      "name": "Cloud Modernization & Scalable DevOps",
+      "shortDescription": "Secure, highly-available, and radically cost-effective cloud architecture that scales effortlessly with your business.",
+      "description": "Future-proof your operations. We modernize your infrastructure with secure, scalable, and highly-available cloud solutions (AWS, Azure, Google Cloud). We implement cutting-edge **DevOps automation** to increase deployment speed, eliminate downtime, and radically lower your long-term operational costs.",
+      "icon": "cloud-infrastructure.svg",
+      "highlights": [
+        "Strategic Cloud Migration: Seamlessly transition from on-premise to the cloud with minimal disruption and optimal architecture design.",
+        "Security & Compliance: Implementation of best-practice zero-trust security models, penetration testing, and configuration management.",
+        "DevOps Automation: Infrastructure as Code (IaC) using tools like Terraform to automate provisioning and ensure environments are consistent.",
+        "Cost Optimization & Monitoring: Proactive resource rightsizing, serverless adoption, and advanced monitoring to eliminate cloud waste and guarantee efficiency."
+      ]
+    }
+  ]

@@ -1,0 +1,39 @@
+<div class="bg-gray-50 py-16 px-4 md:px-8 lg:px-16 min-h-screen">
+    <div class="max-w-3xl mx-auto">
+        <ng-container *ngIf="blogStore.state().selectedPost as post; else loadingOrError">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-6 text-red-700 animate-slide-in-left">
+                {{ post.title }}
+            </h1>
+            <div class="text-center text-gray-500 mb-8 text-lg">
+                <span>By **{{ post.author }}**</span> &bull;
+                <span>{{ post.datePublished | date:'longDate' }}</span>
+            </div>
+            <img *ngIf="post.image" [src]="post.image" [alt]="post.title"
+                class="rounded-xl shadow-lg mb-10 w-full max-h-96 object-cover">
+
+            @if(blogStore.state().selectedPost?.paragraphs) {
+                @for(p of blogStore.state().selectedPost?.paragraphs; track p) {
+                    @if(p.type === 'text') {
+                        <p class="text-xl text-gray-700 mb-8 leading-relaxed">{{ p.content }}</p>
+                    } @else if(p.type === 'image') {
+                        <img [src]="p.content" [alt]="blogStore.state().selectedPost?.title"
+                            class="rounded-xl shadow-lg mb-10 w-full max-h-96 object-cover">
+                    }
+                    @else if(p.type === 'heading') {
+                        <h2 class="text-3xl font-bold text-red-700 mt-10 mb-6">{{ p.content }}</h2>
+                    }
+                    @else if(p.type === 'list-item') {
+                        <li class="text-xl text-gray-700 mb-2">{{ p.content }}</li>
+                    }
+                }
+            }
+        </ng-container>
+        
+        <ng-template #loadingOrError>
+            <div *ngIf="blogStore.state().loading" class="text-center text-xl text-gray-500">Loading post...</div>
+            <div *ngIf="blogStore.state().error" class="text-center text-xl text-red-700 font-medium">
+                {{ blogStore.state().error }}
+            </div>
+        </ng-template>
+    </div>
+</div>

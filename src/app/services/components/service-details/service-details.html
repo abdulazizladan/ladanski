@@ -1,0 +1,41 @@
+<section class="bg-gray-900 py-16 md:py-24 px-4 sm:px-8 lg:px-12">
+    <div class="max-w-5xl mx-auto text-white">
+      <a
+        class="text-red-400 hover:text-red-300 transition-colors inline-block mb-8 md:mb-12 text-lg"
+        routerLink="/services"
+      >
+        ← Back to Services
+      </a>
+  
+      <div class="space-y-8 md:space-y-10">
+        <div class="pt-2">
+          <div class="mb-4 opacity-90">
+            <img [src]="service?.icon" [alt]="service?.name + ' icon'" class="w-32 h-20 object-contain">
+          </div>
+  
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+            {{ service?.name }}
+          </h1>
+  
+          <p class="mt-6 text-xl text-gray-300 max-w-3xl leading-relaxed">
+            {{ service?.description }}
+          </p>
+        </div>
+  
+        <div>
+          <h2 class="text-3xl font-bold mb-5 border-b border-gray-700 pb-2">
+            Key Deliverables & Outcomes
+          </h2>
+          <ul
+            class="space-y-4 list-disc list-inside text-gray-200 text-lg md:text-xl"
+          >
+            @for (item of service?.highlights || []; track item) {
+              <li class="pl-2">
+                <span class="font-medium">{{ item }}</span>
+              </li>
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>

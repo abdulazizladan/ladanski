@@ -1,0 +1,33 @@
+<svg width="320" height="180" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="320" height="180" fill="url(#bgGradient2)" rx="8"/>
+  
+  <!-- Browser window -->
+  <rect x="80" y="60" width="160" height="100" fill="none" stroke="url(#iconGradient2)" stroke-width="3" rx="4"/>
+  
+  <!-- Browser header -->
+  <rect x="80" y="60" width="160" height="20" fill="url(#iconGradient2)" opacity="0.2" rx="4"/>
+  <circle cx="90" cy="70" r="3" fill="url(#iconGradient2)"/>
+  <circle cx="100" cy="70" r="3" fill="url(#iconGradient2)" opacity="0.6"/>
+  <circle cx="110" cy="70" r="3" fill="url(#iconGradient2)" opacity="0.6"/>
+  
+  <!-- Website content lines -->
+  <rect x="90" y="90" width="80" height="4" fill="url(#iconGradient2)" opacity="0.8"/>
+  <rect x="90" y="100" width="60" height="3" fill="url(#iconGradient2)" opacity="0.6"/>
+  <rect x="90" y="110" width="70" height="3" fill="url(#iconGradient2)" opacity="0.6"/>
+  
+  <!-- Sparkle effects -->
+  <path d="M 250 80 L 255 85 L 250 90 L 245 85 Z" fill="url(#iconGradient2)" opacity="0.8"/>
+  <path d="M 70 100 L 73 103 L 70 106 L 67 103 Z" fill="url(#iconGradient2)" opacity="0.6"/>
+</svg>

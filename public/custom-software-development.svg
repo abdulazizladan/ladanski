@@ -1,0 +1,26 @@
+<svg width="320" height="180" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="320" height="180" fill="url(#bgGradient1)" rx="8"/>
+  
+  <!-- Code brackets -->
+  <text x="160" y="90" text-anchor="middle" font-family="monospace" font-size="48" fill="url(#iconGradient1)">&lt;/&gt;</text>
+  
+  <!-- Circuit lines -->
+  <path d="M 60 140 L 100 140 L 100 120 L 140 120" stroke="url(#iconGradient1)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 260 140 L 220 140 L 220 120 L 180 120" stroke="url(#iconGradient1)" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Dots -->
+  <circle cx="70" cy="130" r="3" fill="url(#iconGradient1)" opacity="0.8"/>
+  <circle cx="250" cy="130" r="3" fill="url(#iconGradient1)" opacity="0.8"/>
+</svg>

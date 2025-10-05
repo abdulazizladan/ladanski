@@ -1,0 +1,241 @@
+[
+    {
+        "id": "pigeon-fuel-station-manager",
+        "name": "Pigeon",
+        "description": "Web-based fuel station management system",
+        "preview": "https://www.octane-systems.com/edit/cache/images/cropped_1200x761c0pcenter.jpg",
+        "summary": "Pigeon is a comprehensive web-based fuel station management system designed to streamline and automate daily operations. It offers a centralized platform for administrators, directors, and managers to efficiently oversee all aspects of their fuel stations.",
+        "link": "pigeon-fuel-station-manager",
+        "demo_link": "https://pigeon-218.web.app",
+        "sections": [
+            {
+                "type": "heading",
+                "content": "Key Features"
+            },
+            {
+                "type": "features-list",
+                "content": [
+                    {
+                        "subheading": "Role-Based Authentication:",
+                        "content": "Pigeon utilizes a robust role-based authentication system to provide tailored access for different user types. Administrators have full control, directors can monitor multiple stations, and managers can handle day-to-day operations for their specific location."
+                    },
+                    {
+                        "subheading": "Staff Management",
+                        "content": "Easily manage your team by adding, editing, and assigning attendants to specific shifts and stations. Track their performance and attendance directly from the dashboard."
+                    },
+                    {
+                        "subheading": "Sales and Inventory Tracking",
+                        "content": "Gain real-time insights into your fuel sales and inventory. The system automatically records every transaction, helping you monitor stock levels, prevent theft, and make informed restocking decisions."
+                    },
+                    {
+                        "subheading": "Issue Management",
+                        "content": "Log and track issues like equipment malfunctions, spills, or other operational problems. Assign tasks to staff members and monitor their resolution progress to ensure your station runs smoothly."
+                    },
+                    {
+                        "subheading": "Reporting and Analytics",
+                        "content": "Generate detailed reports on sales, inventory, and staff performance. Use these analytics to identify trends, optimize operations, and boost profitability."
+                    }
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Benefits of Using Pigeon"
+            },
+            {
+                "type": "features-list",
+                "content": [
+                    {
+                        "subheading": "Increased Efficiency",
+                        "content": "Automate manual tasks and get real-time data, allowing you and your team to focus on more strategic activities."
+                    },
+                    {
+                        "subheading": "Improved Accountability",
+                        "content": "With role-based access and detailed transaction logs, you can easily track sales and staff performance, reducing the risk of discrepancies."
+                    },
+                    {
+                        "subheading": "Better Decision-Making",
+                        "content": "Use data-driven insights from our reporting tools to make smarter decisions about restocking, pricing, and staffing."
+                    },
+                    {
+                        "subheading": "Enhanced Security",
+                        "content": "Securely manage your data and operations with our robust authentication and issue tracking systems, giving you peace of mind."
+                    }
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "How Pigeon Works"
+            },
+            {
+                "type": "text",
+                "content": "Pigeon centralizes all essential fuel station management tasks into a single, easy-to-use interface. After logging in, users are presented with a dashboard tailored to their specific role. From here, managers can monitor daily sales, update inventory, and handle staff schedules. Directors can access high-level reports to compare performance across multiple stations, while administrators can manage all settings and user accounts."
+            },
+            {
+                "type": "image",
+                "content": "https://i.ibb.co/K2tX6y1/pigeon-dashboard.png"
+            }
+        ]
+    },
+    {
+        "id": "owl-school-management-information-system",
+        "name": "Owl",
+        "description": "Cross-platform school management system",
+        "preview": "https://blog.excelmind.org/wp-content/uploads/2025/05/The-Best-School-Management-Software-in-Nigeria-1.png",
+        "summary": "Owl is a comprehensive web-based school management information system designed to streamline the administration and communication for secondary schools. It provides a centralized platform for administrators, staff, students, and guardians to manage and access critical school information.",
+        "link": "owl-school-management-information-system",
+        "demo_link": "https://owl-sms-alpha.web.app",
+        "sections": [
+            {
+                "type": "heading",
+                "content": "Key Features"
+            },
+            {
+                "type": "features-list",
+                "content": [
+                    {
+                        "subheading": "Role-Based Access",
+                        "content": "Owl provides specific dashboards and access levels for administrators, teachers, students, and guardians. This ensures each user can view and manage relevant information securely."
+                    },
+                    {
+                        "subheading": "Assessment and Grade Management",
+                        "content": "Teachers can easily record, update, and manage student assessments and grades. Students and guardians can view real-time progress, ensuring transparency in academic performance."
+                    },
+                    {
+                        "subheading": "Student and Staff Enrollment",
+                        "content": "The system simplifies the process of enrolling new students and managing staff employment details. Keep all critical data organized and accessible in one place."
+                    },
+                    {
+                        "subheading": "Facility and Resource Management",
+                        "content": "Manage school facilities, classrooms, and resources efficiently. Schedule usage, track maintenance, and ensure all resources are optimally utilized."
+                    },
+                    {
+                        "subheading": "Communication Tools",
+                        "content": "Facilitate seamless communication between teachers, students, and guardians. Send announcements, notifications, and updates directly through the system."
+                    },
+                    {
+                        "subheading": "Reporting and Analytics",
+                        "content": "Generate detailed reports on student performance, attendance, and resource utilization to help school administrators make informed decisions."
+                    }
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Benefits of Using Owl"
+            },
+            {
+                "type": "features-list",
+                "content": [
+                    {
+                        "subheading": "Enhanced Communication",
+                        "content": "Bridge the communication gap between all stakeholders—administrators, teachers, students, and guardians with integrated messaging and notification systems."
+                    },
+                    {
+                        "subheading": "Improved Administrative Efficiency",
+                        "content": "Automate routine tasks such as enrollment and reporting, freeing up administrative staff to focus on more critical activities."
+                    },
+                    {
+                        "subheading": "Improved Administrative Efficiency",
+                        "content": "Automate routine tasks such as enrollment and reporting, freeing up administrative staff to focus on more critical activities."
+                    },
+                    {
+                        "subheading": "Increased Transparency",
+                        "content": "Provide students and guardians with real-time access to grades, attendance records, and school updates, fostering trust and engagement."
+                    },
+                    {
+                        "subheading": "Data-Driven Decisions",
+                        "content": "Leverage powerful reporting and analytics to gain insights into school performance, student progress, and resource management."
+                    }
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "How Owl Works"
+            },
+            {
+                "type": "text",
+                "content": "Owl serves as the central hub for all school-related information. Upon logging in, users are directed to a dashboard tailored to their role. For instance, an administrator can manage all aspects of the school, from enrollment to facilities. A teacher can access their classes, record grades, and communicate with students and parents. Students can view their grades, attendance, and assignments, while guardians can monitor their child's progress and stay informed about school activities."
+            },
+            {
+                "type": "image",
+                "content": "https://i.ibb.co/hV6v4D5/owl-dashboard.png"
+            }
+        ]
+    },
+    {
+        "id": "kd-markets-management-system",
+        "name": "KD-Markets",
+        "description": "Comprehensive markets management system for State-level administration",
+        "preview": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+        "summary": "KD-Markets is a powerful web-based markets management system designed to enable State-level market administrators to efficiently oversee all aspects of their markets. It provides comprehensive tools for revenue generation, facilities management, building and stall occupancy tracking, and user management.",
+        "link": "kd-markets-management-system",
+        "demo_link": "https://kd-markets.web.app",
+        "sections": [
+            {
+                "type": "heading",
+                "content": "Key Features"
+            },
+            {
+                "type": "features-list",
+                "content": [
+                    {
+                        "subheading": "Revenue Generation Management",
+                        "content": "Track and manage all revenue streams including stall rentals, shop fees, market taxes, and other income sources. Generate comprehensive financial reports and monitor revenue trends across different market locations."
+                    },
+                    {
+                        "subheading": "Facilities Management",
+                        "content": "Efficiently manage market infrastructure including buildings, stalls, shops, parking areas, and utilities. Track maintenance schedules, repairs, and facility upgrades to ensure optimal market conditions."
+                    },
+                    {
+                        "subheading": "Building and Stall Occupancy",
+                        "content": "Monitor real-time occupancy status of all market facilities. Track lease agreements, rental periods, and occupancy rates to maximize space utilization and revenue generation."
+                    },
+                    {
+                        "subheading": "User Management System",
+                        "content": "Comprehensive user management for market administrators, staff, vendors, and tenants. Role-based access control ensures secure and appropriate access to different system features."
+                    },
+                    {
+                        "subheading": "Market Analytics and Reporting",
+                        "content": "Advanced analytics and reporting tools to track market performance, occupancy rates, revenue trends, and operational efficiency. Make data-driven decisions to optimize market operations."
+                    }
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "Benefits of Using KD-Markets"
+            },
+            {
+                "type": "features-list",
+                "content": [
+                    {
+                        "subheading": "Centralized Market Control",
+                        "content": "Manage multiple markets from a single platform with real-time visibility into operations, occupancy, and revenue across all locations."
+                    },
+                    {
+                        "subheading": "Increased Revenue Optimization",
+                        "content": "Identify underutilized spaces, optimize rental rates, and implement strategic pricing to maximize market revenue and profitability."
+                    },
+                    {
+                        "subheading": "Improved Operational Efficiency",
+                        "content": "Automate routine administrative tasks, streamline facility management processes, and reduce manual workload for market administrators."
+                    },
+                    {
+                        "subheading": "Enhanced Market Planning",
+                        "content": "Use comprehensive data and analytics to plan market expansions, renovations, and strategic improvements based on actual usage patterns and revenue data."
+                    }
+                ]
+            },
+            {
+                "type": "heading",
+                "content": "How KD-Markets Works"
+            },
+            {
+                "type": "text",
+                "content": "KD-Markets provides State-level administrators with a comprehensive dashboard to oversee all market operations. The system centralizes facility management, tracks occupancy and revenue in real-time, and provides detailed analytics for strategic decision-making. Administrators can monitor multiple markets simultaneously, manage user access, track facility maintenance, and generate comprehensive reports on market performance and revenue generation."
+            },
+            {
+                "type": "image",
+                "content": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+            }
+        ]
+    }
+]

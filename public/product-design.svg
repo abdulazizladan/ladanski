@@ -1,0 +1,40 @@
+<svg width="320" height="180" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="320" height="180" fill="url(#bgGradient6)" rx="8"/>
+  
+  <!-- Design palette -->
+  <rect x="120" y="60" width="80" height="60" fill="none" stroke="url(#iconGradient6)" stroke-width="3" rx="4"/>
+  
+  <!-- Color swatches -->
+  <rect x="130" y="70" width="15" height="15" fill="url(#iconGradient6)" opacity="0.8"/>
+  <rect x="150" y="70" width="15" height="15" fill="url(#iconGradient6)" opacity="0.6"/>
+  <rect x="170" y="70" width="15" height="15" fill="url(#iconGradient6)" opacity="0.4"/>
+  
+  <rect x="130" y="90" width="15" height="15" fill="url(#iconGradient6)" opacity="0.3"/>
+  <rect x="150" y="90" width="15" height="15" fill="url(#iconGradient6)" opacity="0.5"/>
+  <rect x="170" y="90" width="15" height="15" fill="url(#iconGradient6)" opacity="0.7"/>
+  
+  <!-- Paintbrush -->
+  <line x1="80" y1="80" x2="110" y2="110" stroke="url(#iconGradient6)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="80" cy="80" r="6" fill="url(#iconGradient6)"/>
+  
+  <!-- Design tools -->
+  <rect x="220" y="80" width="40" height="4" fill="url(#iconGradient6)" opacity="0.8" rx="2"/>
+  <rect x="220" y="90" width="35" height="4" fill="url(#iconGradient6)" opacity="0.6" rx="2"/>
+  <rect x="220" y="100" width="30" height="4" fill="url(#iconGradient6)" opacity="0.8" rx="2"/>
+  
+  <!-- User flow arrows -->
+  <path d="M 70 140 Q 160 120 250 140" stroke="url(#iconGradient6)" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 70 150 Q 160 130 250 150" stroke="url(#iconGradient6)" stroke-width="2" fill="none" opacity="0.4"/>
+</svg>
